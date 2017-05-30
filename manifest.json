@@ -1,0 +1,26 @@
+{
+   "background": {
+      "scripts": [ "scripts/background.js" ]
+   },
+   "browser_action": {
+      "default_title": ""
+   },
+   "content_scripts": [ {
+      "js": [ "scripts/eventListener.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "description": "This extension auto scroll down on tabs and switch to the next when it reaches the bottom of the current tab. ©Copyright CyonTech.ca",
+   "icons": {
+      "128": "icon128.png",
+      "32": "icon32.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwayHoyCSngG+2CxgOHf9XrX3RjRimvySbzAtiq67mfsP4ROZ0RzovcA3MraNQcK2r0+K+57a0+mIsLS+Zt1tF55wsSlfXZtjZBNltGM8zadtd2t6g+KSB/L4Fh+Tejm2aYyTuxaJM3KPH6T6Ya2rpZtExVXenD8mor+yn54wvGLTPk6rpNPn8u8DGPVT67GofFfgq57QeYvMZdaxOkK71EiwQ4Ymj/QzpUkog3ZzcgR2rCtU7aQHG5S+PMFYZjxnQLTF32Q0prayo6T+N/xuu24GBYsHrTjBcSOpux+9zXCabSGKhjp6po/IFBGRsOeWGiWXUjDwvc2P3MM5r4Q74wIDAQAB",
+   "manifest_version": 2,
+   "name": "Automatic Scrolling Tabs",
+   "options_page": "options.html",
+   "permissions": [ "activeTab", "tabs", "background", "\u003Call_urls>", "*://*/*", "storage" ],
+   "short_name": "AutoScrollTabs",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.9"
+}

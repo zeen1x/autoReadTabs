@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<title>AutoScrollTabs</title>	
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="scripts/options.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<h2>Automatic Scrolling Tabs - OPTIONS</h2>
+		</div>
+		<div id="content">
+			<fieldset>
+				<center>
+					<table>
+						  <tr>
+							<td>Scroll interval speed: </td>
+							<td><input type="text" id="scrollSpeed" size="4" value="40"/></td> 
+							<td>(lower is faster)</td>
+						  </tr>
+						  <tr>
+							<td>Wait time at bottom: </td>
+							<td><input type="text" id="botWaitTime" size="4" value="1"/></td> 
+							<td>sec.</td>
+						  </tr>
+						  <tr>
+							<td>Static tab timeout: </td>
+							<td><input type="text" id="staticTabTimeout" size="4" value="15"/></td> 
+							<td>sec.</td>
+						  </tr>
+						  <tr>
+							<td>Tab timeout: </td>
+							<td><input type="text" id="tabTimeout" size="4" value="30"/></td> 
+							<td>sec.</td>
+						  </tr>
+						  <tr>
+							<td>Open on startup: </td>
+							<td><input type="checkbox" id="openOnStartup" checked="true"/><td>
+						  </tr>
+					</table>
+				</center>	
+				<button class="btn" id="save_settings">Save settings</button></br>
+				<span id="status_settings"></span>&nbsp
+			</fieldset>
+		</div>
+	</body>
+</html>
