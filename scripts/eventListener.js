@@ -1,22 +1,21 @@
-window.addEventListener('scroll', function (e) {
-    if(document.body.scrollHeight == document.body.scrollTop + window.innerHeight) {
-		chrome.runtime.sendMessage({message:"hasReachedBottom"}, function(e){});
-    }
+window.addEventListener('scroll', (e) => {
+	if (document.documentElement.scrollHeight == document.documentElement.scrollTop + window.innerHeight) {
+		chrome.runtime.sendMessage({ message: "hasReachedBottom" }, (e) => { });
+	}
 }, false);
 
-window.onfocus = function() {  
-	if(!(document.body.scrollHeight > document.body.clientHeight))
-	{
-		chrome.runtime.sendMessage({message:"isAStaticTab"}, function(e){}); 
+window.onfocus = () => {
+	if (!(document.documentElement.scrollHeight > document.documentElement.clientHeight)) {
+		chrome.runtime.sendMessage({ message: "isAStaticTab" }, (e) => { });
 	}
 };
 
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
+window.onbeforeunload = () => {
+	window.scrollTo(0, 0);
 }
 
-window.onload = function() {
-	
+window.onload = () => {
+
 	// check the visiblility of the page
 	var hidden, visibilityState, visibilityChange;
 
@@ -38,15 +37,15 @@ window.onload = function() {
 		// not supported
 	}
 	else {
-		document.addEventListener(visibilityChange, function() {
-		
+		document.addEventListener(visibilityChange, () => {
+
 			switch (document[visibilityState]) {
-			case "visible":
-				chrome.runtime.sendMessage({message:"visibleTab"}, function(e){});
-				break;
-			case "hidden":
-				chrome.runtime.sendMessage({message:"hiddenTab"}, function(e){});
-				break;
+				case "visible":
+					chrome.runtime.sendMessage({ message: "visibleTab" }, (e) => { });
+					break;
+				case "hidden":
+					chrome.runtime.sendMessage({ message: "hiddenTab" }, (e) => { });
+					break;
 			}
 		}, false);
 	}

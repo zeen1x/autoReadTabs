@@ -22,5 +22,5 @@
    "permissions": [ "activeTab", "tabs", "background", "\u003Call_urls>", "*://*/*", "storage" ],
    "short_name": "AutoScrollTabs",
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.0.9"
+   "version": "1.1.4"
 }

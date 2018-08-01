@@ -1,6 +1,6 @@
 body {
-	font-size: 16px;
-    width:50%;
+	font-size:16px;
+    width:40%;
     margin-left:auto;
     margin-right:auto;
 }
@@ -22,12 +22,11 @@ fieldset {
 }
 
 table{
-	width:60%;
-	
+	width:auto;
 }
 
 #header {
-    background-color:#4488BF;
+    background-color:#3E5372;
     color:white;
     text-align:center;
     padding:5px;
@@ -35,18 +34,31 @@ table{
 #content {
     line-height:30px;
     background-color:#eeeeee;
+	text-align:left;
+    height:auto;
+    padding:5px;
+}
+#save {
+    line-height:30px;
+    background-color:#eeeeee;
 	text-align:center;
-    height:100%;
-    padding:5px; 
+    height:auto;
+    padding:5px;
+}
+#donation {
+    line-height:30px;
+	text-align:right;
+	height:auto;
+	padding:5px;
 }
 
 .btn {
   background: #4488BF;
-  background-image: -webkit-linear-gradient(top, #4488BF, #3f78a3);
-  background-image: -moz-linear-gradient(top, #4488BF, #3f78a3);
-  background-image: -ms-linear-gradient(top, #4488BF, #3f78a3);
-  background-image: -o-linear-gradient(top, #4488BF, #3f78a3);
-  background-image: linear-gradient(to bottom, #4488BF, #3f78a3);
+  background-image: -webkit-linear-gradient(top, #3E5372, #3f78a3);
+  background-image: -moz-linear-gradient(top, #3E5372, #3f78a3);
+  background-image: -ms-linear-gradient(top, #3E5372, #3f78a3);
+  background-image: -o-linear-gradient(top, #3E5372, #3f78a3);
+  background-image: linear-gradient(to bottom, #3E5372, #3f78a3);
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;

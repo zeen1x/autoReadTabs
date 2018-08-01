@@ -1,47 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>AutoScrollTabs</title>	
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>AutoScrollTabs</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script type="text/javascript" src="scripts/options.js"></script>
 	</head>
-	<body>
+	<body><fieldset>
 		<div id="header">
 			<h2>Automatic Scrolling Tabs - OPTIONS</h2>
 		</div>
 		<div id="content">
-			<fieldset>
-				<center>
 					<table>
 						  <tr>
 							<td>Scroll interval speed: </td>
-							<td><input type="text" id="scrollSpeed" size="4" value="40"/></td> 
+							<td><input type="text" id="scrollSpeed" size="6" value="50"/></td> 
 							<td>(lower is faster)</td>
 						  </tr>
 						  <tr>
 							<td>Wait time at bottom: </td>
-							<td><input type="text" id="botWaitTime" size="4" value="1"/></td> 
+							<td><input type="text" id="botWaitTime" size="6" value="5"/></td> 
 							<td>sec.</td>
 						  </tr>
 						  <tr>
 							<td>Static tab timeout: </td>
-							<td><input type="text" id="staticTabTimeout" size="4" value="15"/></td> 
+							<td><input type="text" id="staticTabTimeout" size="6" value="15"/></td> 
 							<td>sec.</td>
 						  </tr>
 						  <tr>
 							<td>Tab timeout: </td>
-							<td><input type="text" id="tabTimeout" size="4" value="30"/></td> 
+							<td><input type="text" id="tabTimeout" size="6" value="45"/></td> 
 							<td>sec.</td>
 						  </tr>
-						  <tr>
-							<td>Open on startup: </td>
-							<td><input type="checkbox" id="openOnStartup" checked="true"/><td>
-						  </tr>
-					</table>
-				</center>	
+					</table></br>
+		</div>
+		<div id="save">
 				<button class="btn" id="save_settings">Save settings</button></br>
-				<span id="status_settings"></span>&nbsp
-			</fieldset>
+				<span id="status_settings"></span></br>
+		</div>
+	</fieldset>
+		<div id="donation">
+					<form action="https://paypal.me/pdesbiens">
+						<input type="hidden" name="cmd" value="_donations">
+						<td>©Copyright 2018 - <a href=https://cyontech.ca>CyonTech.ca</a> - If you like it:</td>
+						<input type="image" name="submit"src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"alt="Donate">
+						<img alt="" width="1" height="1"src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+					</form>
 		</div>
 	</body>
 </html>
